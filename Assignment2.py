@@ -14,13 +14,19 @@ def retir():
 
     age = input("Please enter your age: ")
     annualSal = input("Please enter you annual salary: ")
-    percentsave = input("Please enter percentage saved(please only input the number do not include the (%)): ")
+    percentsave = input("Please enter percentage saved as a decimel: ")
     desiredsavinggoal = input("Plase enter your desiered retirement saving goal: ")
 
     age = (int(age))
     annualSal = (int(annualSal))
-    percentsave = (int(percentsave))
+    percentsave = (float(percentsave))
     desiredsavinggoal = (int(desiredsavinggoal))
+
+    savPerYear = (annualSal * percentsave) * 1.35
+    numYear = desiredsavinggoal / savPerYear
+    CompletionAge = age + numYear
+
+    print(CompletionAge)
     
 
     menu()
