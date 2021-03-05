@@ -42,7 +42,7 @@ def bmical(heightfeet,heightinches,heightweight):
 
     answer = round(answer)
 
-    return (answer,category)
+    return (answer, category)
 
 
 def menu():
@@ -94,7 +94,7 @@ def menu():
                 print("  \n  ")
                 menu()
 
-            print(CompletionAge)
+            print("You can reitre at this age with the desiered goal: ", CompletionAge)
             print("  \n  ")
             menu()
 
@@ -108,4 +108,8 @@ def menu():
             print("  ")
             a = input(" You entered a incorrect number \n Please enter 1, 2, or 3 :")
 
+
 menu()
+#For some reason the Test will not run when menu is called even though I do not test menu
+#and the funcitons mention do not call menu at any point, I apoglize for the error but 
+#I cannot seem to find a solution
